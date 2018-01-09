@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.patil.scarnesdice.MainActivity">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="270dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="18dp"
+        android:text="Your Score:  Computer Score: " />
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        app:srcCompat="@drawable/dice1" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/holdButton"
+        android:layout_alignBottom="@+id/holdButton"
+        android:layout_alignStart="@+id/status"
+        android:text="Roll" />
+
+    <Button
+        android:id="@+id/holdButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resetButton"
+        android:layout_alignBottom="@+id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:text="Hold" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="26dp"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/label"
+        android:text="Turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rollButton"
+        android:layout_alignStart="@+id/holdButton"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="18dp" />
+
+
+
+</RelativeLayout>
